@@ -5,6 +5,7 @@ class ContactsController < ApplicationController
   end
 
   def new
+    @contact = Contact.new
     render('contacts/new.html.erb')
   end
 
