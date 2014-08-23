@@ -4,11 +4,6 @@ class ContactsController < ApplicationController
     render('contacts/index.html.erb')
   end
 
-  def new
-    @contact = Contact.new
-    render('contacts/new.html.erb')
-  end
-
   def create
     @contact = Contact.new(:name => params[:name],
                            :email => params[:email],
