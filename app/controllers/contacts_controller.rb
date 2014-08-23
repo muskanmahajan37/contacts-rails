@@ -40,4 +40,10 @@ class ContactsController < ApplicationController
       render('contacts/edit.html.erb')
     end
   end
+
+  def destroy
+    @contact = Contact.find(params[:id])
+    @contact.destroy
+    render('contacts/destroy.html.erb')
+  end
 end
