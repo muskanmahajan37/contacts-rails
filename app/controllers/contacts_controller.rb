@@ -11,7 +11,7 @@ class ContactsController < ApplicationController
     if @contact.save
       render('contacts/success.html.erb')
     else
-      render('contacts/new.html.erb')
+      render('contacts/index.html.erb')
     end
   end
 
