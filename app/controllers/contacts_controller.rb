@@ -24,4 +24,9 @@ class ContactsController < ApplicationController
     @contact = Contact.find(params[:id])
     render('contacts/show.html.erb')
   end
+
+  def edit
+    @contact = Contact.find(params[:id])
+    render('contacts/edit.html.erb')
+  end
 end
